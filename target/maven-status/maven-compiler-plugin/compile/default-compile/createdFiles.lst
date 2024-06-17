@@ -1,0 +1,5 @@
+com/example/EmployeeCRUDApp/service/EmployeeService.class
+com/example/EmployeeCRUDApp/controller/EmployeeController.class
+com/example/EmployeeCRUDApp/model/Employee.class
+com/example/EmployeeCRUDApp/EmployeeCrudAppApplication.class
+com/example/EmployeeCRUDApp/repository/EmployeeRepository.class
