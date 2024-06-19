@@ -1,3 +1,4 @@
+//EmployeeCrudAppApplication.java is the main class that Spring Boot looks for to start the application.
 package com.example.EmployeeCRUDApp;
 
 import org.springframework.boot.SpringApplication;

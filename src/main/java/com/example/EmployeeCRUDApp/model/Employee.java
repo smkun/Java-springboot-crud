@@ -1,4 +1,4 @@
-
+// Employee.java
 package com.example.EmployeeCRUDApp.model;
 
 import javax.persistence.Entity;
