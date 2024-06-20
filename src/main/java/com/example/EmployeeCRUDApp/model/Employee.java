@@ -1,4 +1,3 @@
-// Employee.java
 package com.example.EmployeeCRUDApp.model;
 
 import javax.persistence.Entity;
@@ -11,18 +10,18 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
     private String name;
     private String email;
     private String department;
     private String manager;
 
     // Getters and Setters
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
