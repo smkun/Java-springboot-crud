@@ -15,14 +15,17 @@ public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    // Retrieves all employees from the repository
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
     }
 
+    // Saves a given employee to the repository
     public void saveEmployee(Employee employee) {
         employeeRepository.save(employee);
     }
 
+    // Retrieves an employee by their ID
     public Employee getEmployeeById(Long id) {
         Optional<Employee> optional = employeeRepository.findById(id);
         Employee employee = null;
@@ -34,8 +37,8 @@ public class EmployeeService {
         return employee;
     }
 
+    // Deletes an employee by their ID
     public void deleteEmployeeById(Long id) {
         employeeRepository.deleteById(id);
     }
 }
-

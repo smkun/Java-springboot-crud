@@ -1,4 +1,4 @@
-<!-- umdate_employee.html -->
+<!-- update_employee.html -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -7,6 +7,7 @@
 <body>
     <h1>Update Employee</h1>
     <form th:action="@{/saveEmployee}" th:object="${employee}" method="post">
+        <!-- Hidden input for employee ID, and input fields for employee details -->
         <input type="hidden" th:field="*{id}">
         <label for="name">Name</label>
         <input type="text" id="name" th:field="*{name}"><br>

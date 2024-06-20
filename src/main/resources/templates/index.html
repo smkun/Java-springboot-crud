@@ -17,18 +17,21 @@
             </tr>
         </thead>
         <tbody>
+            <!-- Iterates over the list of employees and displays their details -->
             <tr th:each="employee : ${listEmployees}">
                 <td th:text="${employee.name}">Name</td>
                 <td th:text="${employee.email}">Email</td>
                 <td th:text="${employee.department}">Department</td>
                 <td th:text="${employee.manager}">Manager</td>
                 <td>
+                    <!-- Links to edit and delete the employee -->
                     <a th:href="@{/showFormForUpdate/{id}(id=${employee.id})}">Edit</a>
                     <a th:href="@{/deleteEmployee/{id}(id=${employee.id})}">Delete</a>
                 </td>
             </tr>
         </tbody>
     </table>
+    <!-- Link to add a new employee -->
     <a href="/showNewEmployeeForm">Add New Employee</a>
 </body>
 </html>
